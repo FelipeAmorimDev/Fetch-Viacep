@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fetch Cep</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header-container">
+    <div class="header-container__description">
+      <h1>Buscar CEP</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="buscarcep-container">
+      <form class="buscarcep-container__form">
+        <label for="cep-input">Cep</label>
+        <input type="text" name="cep" id="cep-input" placeholder="Digite o cep (00000-000)">
+        <input type="submit" id="submitBtn"value="Procurar">
+      
+      </form>
+    </section>
+
+    <section class="result-search">
+      <div class="result-description">
+        <h2>Resultado</h2>
+        <h3>Cep: <span></span></h3>
+        <h3>Logradouro: <span></span></h3>
+        <h3>Bairro: <span></span></h3>
+        <h3>Cidade: <span></span></h3>
+        <h3>Estado: <span></span></h3>
+      </div>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
